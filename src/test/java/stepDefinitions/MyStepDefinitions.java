@@ -37,11 +37,6 @@ public class MyStepDefinitions {
     public void something_results_are_displayed(String strArg1) throws Throwable {
     	Assert.assertTrue(driver.findElement(By.xpath("//h4[contains(text(),'Cucumber - 1 Kg')]")).getText().contains(strArg1));
     }
-    
-    /*@Then("^Verify selected \"([^\"]*)\" items are displayed in Checkout page$")
-    public void verify_selected_something_items_are_displayed_in_checkout_page(String strArg1) throws Throwable {
-        Assert.assertTrue(driver.findElement(By.xpath("//p[contains(text(),'Brinjal - 1 Kg')]")).getText().contains(strArg1));
-    }*/
 
     @And("^Added items to cart$")
     public void added_items_to_cart() throws Throwable {

@@ -13,5 +13,7 @@ import io.cucumber.junit.CucumberOptions;
 		plugin = {"pretty","summary","html:target/cucumber.html", "json:target/cucumber.json","junit:target/cukes.xml"}
 		)
 public class TestRunner {
-
+	//Comentario1
+	//Comentario2
+	//Comentario3
 }

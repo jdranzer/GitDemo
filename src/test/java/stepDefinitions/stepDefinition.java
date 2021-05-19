@@ -32,6 +32,7 @@ public class stepDefinition extends Base {
 
     @Then("^Check if browser is started$")
     public void check_if_browser_is_started() throws Throwable {
+    	System.out.println("Checking if browser is started.");
     	System.out.println("Browser is started");
     }
 	
@@ -40,11 +41,6 @@ public class stepDefinition extends Base {
         //Code to navigate to login url
 		System.out.println("Navigated to login url");
     }
-	
-	/*@Then("^Verify selected \"([^\"]*)\" items are displayed in Checkout page$")
-    public void verify_selected_something_items_are_displayed_in_checkout_page(String strArg1) throws Throwable {
-        
-    }*/
 	
     @Then("^Verify selected (.+) items are displayed in Checkout page$")
     public void verify_selected_items_are_displayed_in_checkout_page(String name) throws Throwable {
